@@ -1,6 +1,20 @@
 // You can add scroll or interaction animations here later
-document.querySelector(".cta-btn").addEventListener("click", () => {
-  alert("Redirect to contact section (coming soon)!");
+document.addEventListener("DOMContentLoaded", () => {
+  const contactBtn = document.getElementById("contactBtn");
+  const contactSection = document.getElementById("contact");
+  const header = document.querySelector(".site-header"); // sticky header
+
+  if (contactBtn && contactSection) {
+    contactBtn.addEventListener("click", () => {
+      const headerHeight = header ? header.offsetHeight : 0;
+      const targetPosition = contactSection.offsetTop - headerHeight;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth"
+      });
+    });
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
