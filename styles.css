@@ -151,14 +151,17 @@ body {
 
 .scroll-arrow {
   position: absolute;
-  bottom: 20px; /* space from bottom */
+  bottom: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(0);
   font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #e01f27;
   cursor: pointer;
   animation: bounce 1.5s infinite;
-  z-index: 3; /* above overlay */
+  z-index: 3;
 }
 
 @keyframes bounce {
@@ -170,6 +173,15 @@ body {
   }
   60% {
     transform: translateY(4px);
+  }
+}
+
+@media (max-width:420px) {
+  .scroll-arrow {
+    bottom: 12px;
+    font-size: 1.6rem;
+    width: 48px;
+    height: 48px;
   }
 }
 
