@@ -195,7 +195,7 @@ body {
   }
 }
 
-@media (max-width:420px) {
+@media (max-width:768px) {
   .scroll-arrow {
     display: none;
   }
@@ -428,5 +428,6 @@ body {
   padding-top: 10px;
 
 }
+
 
 
