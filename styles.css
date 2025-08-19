@@ -195,14 +195,11 @@ body {
   }
 }
 
-/* @media (max-width:420px) {
+@media (max-width:420px) {
   .scroll-arrow {
-    bottom: 12px;
-    font-size: 1.6rem;
-    width: 48px;
-    height: 48px;
+    display: none;
   }
-} */
+}
 
 .about, .services, .portfolio {
   padding: 60px 0;
@@ -431,4 +428,5 @@ body {
   padding-top: 10px;
 
 }
+
 
