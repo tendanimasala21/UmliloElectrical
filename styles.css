@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'MuseoModerno', cursive;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--light);
   color: var(--dark);
   line-height: 1.6;
@@ -380,7 +380,7 @@ body {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-family: 'MuseoModerno', cursive;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   outline: none;
 }
@@ -429,4 +429,5 @@ body {
   font-size: 0.9rem;
   border-top: 1px solid #444;
   padding-top: 10px;
+
 }
